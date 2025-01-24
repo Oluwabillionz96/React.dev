@@ -1,35 +1,15 @@
-import { useState } from "react";
+import React from 'react'
+import IfElse from './Lessons/Conditional Rendering/IfElse'
+import DrinkList from './Lessons/Conditional Rendering/ConditionalTest2'
+import List1 from './Lessons/Rendering Lists/List1'
 
-function Square() {
-  const [value, setValue] = useState(null);
-  function handleClick() {
-    setValue("X");
-  }
-  return (
-    <button className="square" onClick={handleClick}>
-      {value}
-    </button>
-  );
-}
 
-export default function Board() {
+const App = () => {
   return (
     <>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
+    <List1 />
     </>
-  );
+  )
 }
+
+export default App
